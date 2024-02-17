@@ -1,11 +1,10 @@
 #typewriter-container {
     overflow: hidden;
-    white-space: nowrap;
     border-right: 2px solid #000; /* Add a blinking cursor effect */
     padding: 10px;
     margin: 20px 0;
     font-family: 'Your Font', sans-serif; /* Add your preferred font */
-    max-width: 600px; /* Set your preferred maximum width */
+    max-width: auto; /* Set your preferred maximum width */
     word-wrap: break-word;
   }
   
