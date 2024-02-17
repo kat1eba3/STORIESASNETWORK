@@ -12,17 +12,22 @@ let charIndex = 0;
 function type() {
   if (lineIndex < lines.length) {
     if (charIndex < lines[lineIndex].length) {
-      textElement.innerHTML += lines[lineIndex].charAt(charIndex);
+      // Create a new div element for each line
+      if (charIndex === 0) {
+        const lineElement = document.createElement('div');
+        textElement.appendChild(lineElement);
+      }
+      textElement.lastChild.innerHTML += lines[lineIndex].charAt(charIndex);
       charIndex++;
       setTimeout(type, 30); // Adjust the speed of typing here (milliseconds)
     } else {
-      textElement.innerHTML += '<br>';
       lineIndex++;
       charIndex = 0;
       setTimeout(type, 30); // Adjust the speed of typing here (milliseconds)
     }
   }
 }
+
 
 // Call the type function to start the typewriting effect
 type();
