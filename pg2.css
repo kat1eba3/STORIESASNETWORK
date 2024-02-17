@@ -12,3 +12,9 @@
     font-size: 18px;
     color: #333; /* Set your preferred text color */
   }
+  
+  .highlight {
+    color: red; /* Set your preferred color */
+    cursor: pointer;
+    text-decoration: underline; /* Add underline effect to indicate it's clickable */
+}
