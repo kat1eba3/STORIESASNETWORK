@@ -14,7 +14,7 @@
 </div>
 
 <script>
-   // Get the text element and container
+  // Get the text element and container
 var textElement = document.getElementById("typewriter-text");
 
 // Your text to be displayed
@@ -45,20 +45,19 @@ function typeWriter() {
       // Move the index to the end of the highlighted text
       index += highlightText.length - 1;
     } else {
-      // Add the regular character to the textElement
-      textElement.innerHTML += text.charAt(index);
-      
+      // Create a text node for regular characters and append it to the textElement
+      var textNode = document.createTextNode(text.charAt(index));
+      textElement.appendChild(textNode);
     }
 
-      // Check if the regular character is the last one
-      if (index === text.length - 1) {
-        // Add a click event to navigate to the next page when the text is clicked
-        textElement.addEventListener("click", function () {
-          // Replace this with your actual navigation code
-          window.location.href = "pg3.html";
-        });
-      }
-    
+    // Check if the regular character is the last one
+    if (index === text.length - 1) {
+      // Add a click event to navigate to the next page when the text is clicked
+      textElement.addEventListener("click", function () {
+        // Replace this with your actual navigation code
+        window.location.href = "pg3.html";
+      });
+    }
 
     index++;
     setTimeout(typeWriter, speed);
