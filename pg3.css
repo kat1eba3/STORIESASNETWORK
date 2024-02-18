@@ -34,23 +34,20 @@ p {
 
 /* Add more sections as needed with different background colors */
 
-.section4 {
-    height: 100vh;
-    background-color: #000000 !important; /* Your desired background color for the last section */
-    color: #EBEBEB;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.content-container {
-    text-align: center;
-}
-
 .circle {
     width: 100px;
     height: 100px;
     background-color: #ffffff;
     border-radius: 50%;
-    margin-top: 20px;
+    margin-top: 20px; /* Adjust the top margin as needed */
+}
+
+.section4 {
+    height: 100vh;
+    background-color: #000000 !important;
+    color: #EBEBEB;
+    display: flex;
+    flex-direction: column; /* Set the flex-direction to column */
+    justify-content: center;
+    align-items: center;
 }
