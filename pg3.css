@@ -8,22 +8,49 @@ section {
     padding: 0 clamp(4rem, 12vw, 20rem);
     display: grid;
     place-content: center;
+}
 
-    p {
-        margin: 0;
-        font-size: 2rem; /* Adjust the font size as needed */
-    }
+h1 {
+    font-size: 2rem;
+    font-weight: normal;
+}
 
-    &:nth-of-type(1) {
-        border-bottom: none;
-    }
+p {
+    margin: 0;
+    font-size: 2rem;
+}
 
-    &:nth-of-type(3) {
-        background: #ffff00;
-    }
+.section1 {
+    background-color: #EBEBEB; /* Your desired background color for section 1 */
+}
 
-    &:nth-of-type(4) {
-        background: rgb(29, 29, 29);
-        color: white;
-    }
+.section2 {
+    background-color: #EBEBEB; /* Your desired background color for section 2 */
+}
+
+.section3 {
+    background-color: #EBEBEB; /* Your desired background color for section 3 */
+}
+
+/* Add more sections as needed with different background colors */
+
+.section4 {
+    height: 100vh;
+    background-color: #000000 !important; /* Your desired background color for the last section */
+    color: #EBEBEB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-container {
+    text-align: center;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin-top: 20px;
 }
