@@ -1,3 +1,8 @@
+body {
+    background-color: black;
+    color: white; /* Set text color to white for better visibility */
+}
+
 article {
     max-width: auto;
     margin: 1em auto;
@@ -5,92 +10,151 @@ article {
     position: relative;
     min-height: 10em;
     text-align: center; /* Center-align text */
-  }
-  
-  .example-left {
+}
+
+.example-left {
     white-space: nowrap;
     position: absolute;
     text-transform: uppercase;
-  }
-  
-  .example-left {
+}
+
+.example-left {
     -webkit-animation: mymove 8s linear infinite; /* Safari 4.0 - 8.0 */
     white-space: nowrap;
     animation: mymove 8s linear infinite alternate;
-  }
-  @keyframes mymove {
-    0% {
-        font-size: 1rem;
+}
+
+@-webkit-keyframes mymove {
+    from {
+        left: 0;
     }
-    25% {
-        font-size: 1.5rem;
-    }
-    50% {
-        font-size: 2rem;
-    }
-    75% {
-        font-size: 2.5rem;
-    }
-    100% {
-        font-size: 3rem;
+    to {
+        left: -140px;
     }
 }
 
-  /* Safari 4.0 - 8.0 */
-  @-webkit-keyframes mymove {
+@keyframes mymove {
     from {
-      left: 0;
+        left: 0;
     }
     to {
-      left: -140px;
+        left: -140px;
     }
-  }
-  
-  @keyframes mymove {
-    from {
-      left: 0;
-    }
-    to {
-      left: -140px;
-    }
-  }
-  
-  
-  .example-right {
+}
+
+.example-right {
     white-space: nowrap;
     position: absolute;
     top:2em;
-    opacity: .4;
     text-transform: uppercase;
-  }
-  
-  .example-right {
+}
+
+.example-right {
     -webkit-animation: urmove 8s linear infinite; /* Safari 4.0 - 8.0 */
     white-space: nowrap;
     animation: urmove 8s linear infinite alternate;
-  }
-  
-  /* Safari 4.0 - 8.0 */
-  @-webkit-keyframes urmove {
+}
+
+@-webkit-keyframes urmove {
     from {
-      right: 0;
+        right: 0;
     }
     to {
-      right: -140px;
+        right: -140px;
     }
-  }
-  
-  @keyframes urmove {
+}
+
+@keyframes urmove {
     from {
-      right: 0;
+        right: 0;
     }
     to {
-      right: -140px;
+        right: -140px;
     }
-  }
-  
-  
-  @keyframes early 
-  { from { opacity:1; } to { opacity:0; } }
-  
-  
+}
+
+.additional-text {
+    white-space: nowrap;
+    position: absolute;
+    top: 2em; /* Adjust as needed */
+    text-transform: uppercase;
+    -webkit-animation: additionalMove 8s linear infinite alternate, colorChange 8s linear infinite alternate;
+    animation: additionalMove 8s linear infinite alternate, colorChange 8s linear infinite alternate;
+}
+
+.additional-text a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Use the parent's color */
+    display: inline-block; /* Make it inline-block to prevent shifting */
+}
+
+@keyframes additionalMove {
+    from {
+        left: 0;
+        font-size: 1rem;
+    }
+    to {
+        left: -140px; /* Adjust the distance as needed */
+        font-size: 1.5rem;
+    }
+}
+
+@-webkit-keyframes additionalMove {
+    from {
+        left: 0;
+        font-size: 1rem;
+    }
+    to {
+        left: -140px; /* Adjust the distance as needed */
+        font-size: 1.5rem;
+    }
+}
+
+@keyframes colorChange {
+    from {
+        color: rgb(0, 0, 0); /* Start color */
+    }
+    to {
+        color: rgb(255, 255, 255); /* End color */
+    }
+}
+
+@-webkit-keyframes colorChange {
+    from {
+        color: rgb(0, 0, 0); /* Start color */
+    }
+    to {
+        color: rgb(255, 255, 255); /* End color */
+    }
+}
+
+.last-text {
+    white-space: nowrap;
+    position: absolute;
+    top:2em;
+    text-transform: uppercase;
+}
+
+.last-text {
+    -webkit-animation: urmove 8s linear infinite; /* Safari 4.0 - 8.0 */
+    white-space: nowrap;
+    animation: urmove 8s linear infinite alternate;
+}
+
+@-webkit-keyframes urmove {
+    from {
+        right: 0;
+    }
+    to {
+        right: -140px;
+    }
+}
+
+@keyframes urmove {
+    from {
+        right: 0;
+    }
+    to {
+        right: -140px;
+    }
+}
