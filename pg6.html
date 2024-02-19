@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:300,300italic,regular,italic,500,500italic,600,600italic,700,700italic" rel="stylesheet" />
+    <link rel="stylesheet" href="pg6.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+    <div id="text-container">
+        <p id="text1" class="glitch" onclick="triggerGlitch()">
+            I went up to my bedroom. Absurd though the gesture was, I closed and locked the door. I threw myself down on my narrow iron bed, and waited on my back. The never-changing rooftops filled the window, and the hazy six o'clock sun hung in the sky. It seemed incredible that this day, a day without warnings or omens, might be that of my implacable death. In despite of my dead father, in despite of having been a child in one of the symmetrical gardens of Hai Feng, was I to die now?
+        </p>
+        <p id="text2" style="display: none;">
+            I sat up on the bed, in senseless and perfect silence, as if Madden was already peering at me. Something - perhaps merely a desire to prove my total penury to myself - made me empty out my pockets. I found just what I knew I was going to find. The American watch, the nickel-plated chain and the square coin, the key ring with the useless but compromising keys to Runeberg's office, the notebook, a letter which I decided to destroy at once (and which I did not destroy), a five-shilling piece, two single shillings and some pennies, a red and blue pencil, a handkerchief - and a revolver with a single bullet. Absurdly I held it and weighed it in my hand, to give myself courage. Vaguely I thought that a pistol shot can be heard for a great distance.
+        </p>
+    </div>
+
+    <section class="section2">
+        <p class="reveal-type"> I must flee.
+        </p>
+    </section>
+
+    <section class="section3">
+        <p class="reveal-type">I must flee.
+        </p>
+    </section>
+
+    <section class="section4">
+        <h1><a href="pg7.html"><b>I must flee.</b></a></h1>
+    </section>
+
+    <script>
+        $(document).ready(function () {
+            function glitchTransition() {
+                // Hide text1 and show text2
+                $("#text1").hide();
+                $("#text2").show();
+                // Add glitch class after a shorter delay
+                setTimeout(function () {
+                    $("#text-container").addClass("glitch");
+                }, 2000); // Adjust the delay before glitch effect as needed
+                // Remove glitch class after glitch effect duration
+                setTimeout(function () {
+                    $("#text-container").removeClass("glitch");
+                }, 2000); // Adjust the glitch effect duration as needed
+            }
+
+            // Function to trigger glitch transition
+            window.triggerGlitch = function() {
+                glitchTransition();
+            }
+        });
+    </script>
+</body>
+
+</html>
