@@ -3,7 +3,7 @@
     border-right: 2px solid #000; /* Add a blinking cursor effect */
     padding: 10px;
     margin: 20px 0;
-    font-family: 'Your Font', sans-serif; /* Add your preferred font */
+    font-family: 'Chakra Petch', sans-serif; /* Correct the font name */
     word-wrap: break-word;
   }
   
@@ -12,7 +12,7 @@
     font-size: 18px;
     color: #333; /* Set your preferred text color */
   }
-  
+
   .highlight {
     color: red; /* Set your preferred color */
     cursor: pointer;
