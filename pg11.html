@@ -13,10 +13,40 @@
 
 </head>
 
+
 <body>
   <div class="disappear">
-    <span>t</span><span>h</span><span>e</span><span> </span><span>f</span><span>u</span><span>t</span><span>u</span><span>r</span><span>e</span><span> </span><span>e</span><span>x</span><span>i</span><span>s</span><span>t</span><span>s</span><span> </span><span>n</span><span>o</span><span>w</span>
+    <span>t</span><span>h</span><span>e</span><span class="space"></span><span> </span><span>f</span><span>u</span><span>t</span><span>u</span><span>r</span><span>e</span><span class="space"></span><span> </span><span>e</span><span>x</span><span>i</span><span>s</span><span>t</span><span>s</span><span class="space"></span><span> </span><span>n</span><span>o</span><span>w</span>
   </div>
+
+  <a href="pg12.html">
+    <div class="pulsing-circle"></div>
+  </a>
+
+  <script>
+
+const disappearElement = document.querySelector('.disappear');
+  const pulsingCircle = document.querySelector('.pulsing-circle');
+
+  function removeLetters() {
+    disappearElement.style.opacity = '0'; 
+    setTimeout(() => {
+      disappearElement.style.display = 'none'; 
+      pulsingCircle.style.visibility = 'visible'; // Make the pulsing circle visible
+    }, 700); // Adjust the delay based on your animation duration
+  }
+
+  // Add an event listener to trigger the removal of letters
+  document.addEventListener('DOMContentLoaded', () => {
+    // Hide the pulsing circle initially
+    pulsingCircle.style.visibility = 'hidden';
+
+    setTimeout(() => {
+      removeLetters();
+    }, 5075); // Adjust the delay based on your animation duration
+  });
+
+  </script>
 </body>
 
 </html>
