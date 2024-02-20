@@ -15,22 +15,27 @@ body{
 }
 
 #weirdtext {
-    max-width: 900px;
+    max-width: 800px;
     margin: 50px auto 20px auto;
-    text-align: center;
     line-height: 1.5;
     font-size: 1.5rem;
     color: #444;
 }
 
-.next-page-link {
-    display: block;
-    margin-top: 10px; /* Adjust the margin to control the space between main text and "I got out" */
-    color: blue;
-    font-weight: bold;
-    font-size: 36px;
+h1 a {
+    text-decoration: none; /* Remove underline from the link */
 }
 
+h1 b {
+    font-weight: bold; 
+    color: #333; /* Set your preferred text color for the bold text */
+}
+
+h1 {
+    font-size: 36px;
+    margin: 10px 0;
+	text-align: center;
+}
 
 #weirdtext span{
 	display: inline-block;
@@ -144,10 +149,3 @@ body{
 
 
 
-.next-page-link {
-    display: block;
-    margin-top: 20px; /* Adjust the margin to control the space between main text and "I got out" */
-    color: blue;
-    font-weight: bold;
-    font-size: 36px;
-}

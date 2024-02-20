@@ -2,7 +2,7 @@ body
 {
     margin: 0;
     padding: 0;
-    background: #fff; 
+    background: #ffffff; 
     font-family: 'Aldrich', sans-serif;
     font-weight: bold;
 }
@@ -31,6 +31,7 @@ body
     width: 100%;
     font-size: 36px;
     text-transform: uppercase;
+    color:#000000
     
 }
 
@@ -72,8 +73,39 @@ button#nextPageBtn {
     right: 20px;
     padding: 15px;
     background-color: #000000;
-    color: #fff;
+    color: #000000;
     border: none;
     border-radius: 100px;
     cursor: pointer;
+}
+
+.author {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 15px; /* Adjust padding as needed */
+}
+
+.author h {
+    margin: 0; /* Remove default margin for the h element */
+    font-size: 16px; /* Set your preferred font size */
+    color: #000000; /* Set your preferred text color */
+    font-family: 'Chakra Petch', sans-serif; /* Correct the font name */
+
+}
+
+.question {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px; /* Adjust padding as needed */
+}
+
+.question h {
+    margin: 0; /* Remove default margin for the h element */
+    font-size: 16px; /* Set your preferred font size */
+    color: #000000; /* Set your preferred text color */
+    font-family: 'Chakra Petch', sans-serif; /* Correct the font name */
+
+
 }

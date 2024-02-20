@@ -93,7 +93,7 @@ body {
   
   .circle-link {
     position: fixed;
-    bottom: 200px; /* Adjust the distance from the bottom */
+    bottom: 100px; /* Adjust the distance from the bottom */
     left: 50%;
     transform: translateX(-50%);
     width: 50px;
