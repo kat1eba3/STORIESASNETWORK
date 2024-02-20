@@ -2,9 +2,12 @@
     overflow: hidden;
     border-right: 2px solid #000; /* Add a blinking cursor effect */
     padding: 10px;
-    margin: 20px 0;
+    margin: 200px auto;
     font-family: 'Chakra Petch', sans-serif; /* Correct the font name */
     word-wrap: break-word;
+    max-width: 800px; /* Set the desired maximum width for the text */
+
+    
   }
   
   #typewriter-text {

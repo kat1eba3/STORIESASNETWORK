@@ -15,6 +15,9 @@
     <p class="animated-title" aria-label="Lost in these imaginary illusions I forgot my destiny - that of the hunted. For an undetermined period of time I felt myself cut off from the world, an abstract spectator. The hazy and murmuring countryside, the moon, the decline of the evening, stirred within me. Going down the gently sloping road I could not feel fatigue. The evening was at once intimate and infinite. "></p>
 
 
+    <section class="circle">
+        <a class="circle-link" href="pg8.html"></a>
+    </section>
 <script> 
 
 let animationContainer = document.querySelector('.animated-title');
@@ -55,17 +58,7 @@ function animate(e, i) {
   e.classList.add('animate');
 }
 
-// Replay Button - For Demo purpose only
-function replay() {
-  let animatedWords = document.querySelectorAll('.animated-word');
-  animatedWords.forEach(function(e, i){
-    e.classList.remove('animate');
-    e.style.opacity = 0;
-    setTimeout(() => {
-      animate(e, i);
-    }, 500);
-  })
-}
+
 
 </script>
 
