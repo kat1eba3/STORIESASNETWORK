@@ -43,28 +43,3 @@ body {
     }
 }
 
-.pulsing-circle {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    animation: pulse 2s infinite, moveAround 10s infinite linear; /* Combine pulse and moveAround animations */
-    cursor: pointer;
-    z-index: 2;
-    top: 50px; /* Place at the bottom */
-    right: 50px; /* Place at the left */
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.2);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-

@@ -19,7 +19,7 @@
 
 var app = {
 
-  chars: ['The Garden of Forking Paths is a picture, incomplete yet not false, of the universe ','b','c','d','f','h','j','Your ancestor did not think of time as absolute and uniform.','f','g','h',' He believed in an infinite series of times, in a dizzily growing, ever spreading network of diverging, converging and parallel times','j','k','This web of time - the strands of which approach one another, bifurcate, intersect or ignore each other through the centuries - embraces every possibility','m','We do not exist in most of them.','o','In some you exist and not I, while in others I do, and you do not, and in yet others both of us exist.','q','r','s','"The Garden of Forking Paths is an enormous guessing game, or parable, in which the subject is time','u','v','w','The rules of the game forbid the use of the word itself. ','y','z','0',' In yet another, I say these very same words, but am an error, a phantom." ','a','b','f','s','q','c','z','b'],
+  chars: ['a ','b','c','d','f','h','j','d','f','g','h','s','j','k','n','m','c','o','m','q','r','s','x','u','v','w','l','y','z','0','p','a','b','f','s','q','c','z','b'],
 
   init: function () {
     app.container = document.createElement('div');
@@ -37,9 +37,9 @@ var app = {
   animate: function (element) {
     var character = app.chars[Math.floor(Math.random() * app.chars.length)];
     var duration = Math.floor(Math.random() * 25) + 5; // Increase the range and add a base value
-    var offset = Math.floor(Math.random() * (50 - duration * 2)) + 3;
+    var offset = Math.floor(Math.random() * (80 - duration * 2)) + 3;
     var size = 10 + (15 - duration);
-    element.style.cssText = 'right:'+offset+'vw; font-size:'+size+'px;animation-duration:'+duration+'s';
+    element.style.cssText = 'left:' + (offset + 20)+ 'vw; font-size:' + size + 'px; animation-duration:' + duration + 's';
     element.innerHTML = character;
     window.setTimeout(app.remove, duration * 1000, element);
   },
