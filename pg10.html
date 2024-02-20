@@ -15,63 +15,23 @@
 
 <body>
   
-    <p class="animated-title" aria-label="Lost in these imaginary illusions I forgot my destiny - that of the hunted. For an undetermined period of time I felt myself cut off from the world, an abstract spectator. The hazy and murmuring countryside, the moon, the decline of the evening, stirred within me. Going down the gently sloping road I could not feel fatigue. The evening was at once intimate and infinite. "></p>
+  <div id='light'></div>
 
-
-    <section class="circle">
-        <a class="circle-link" href="pg11.html"></a>
-    </section>
-
-    <div id="light"></div>
-
+  <div class="text-container">
+    <p>
+      <b><a href="pg11.html">Lost in these imaginary illusions I forgot my destiny</a></b> - that of the hunted. For an undetermined period of time I felt myself cut off from the world, an abstract spectator. The hazy and murmuring countryside, the moon, the decline of the evening, stirred within me. Going down the gently sloping road I could not feel fatigue. The evening was at once intimate and infinite.
+    </p>
+  </div>
+   
+  </div>
     <script>
-      $(document).ready(function () {
-        let light = $("#light");
-        let words = $(".animated-word");
-    
-        $(this).mousemove(function (e) {
-          light.css({
-            "top": e.pageY - 250,
-            "left": e.pageX - 250
-          });
-    
-          // Check if the light overlaps with any word
-          let lightPosition = light.offset();
-          words.each(function () {
-            let word = $(this);
-            let wordPosition = word.offset();
-    
-            if (
-              lightPosition.left < wordPosition.left + word.width() &&
-              lightPosition.left + light.width() > wordPosition.left &&
-              lightPosition.top < wordPosition.top + word.height() &&
-              lightPosition.top + light.height() > wordPosition.top
-            ) {
-              word.addClass("visible-word");
-            } else {
-              word.removeClass("visible-word");
-            }
-          });
-        }).mousedown(function (e) {
-          switch (e.which) {
-            case 1:
-              $("#light").toggleClass("light-off");
-              // Toggle visibility of words when the light is turned on/off
-              if ($("#light").hasClass("light-off")) {
-                words.removeClass("visible-word");
-              }
-              break;
-            case 2:
-              console.log('Middle Mouse button pressed.');
-              break;
-            case 3:
-              console.log('Right Mouse button pressed.');
-              break;
-            default:
-              console.log('You have a strange Mouse!');
-          }
-        });
-      });
+     $(document).ready(function(){
+   $(document).mousemove(function(event){
+      $("#light").css({"top": event.pageY - 250, "left": event.pageX - 250}); 
+   }); 
+   
+   
+});
     </script>
     
       
