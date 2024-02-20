@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="pg9.css" />
+
+  <link href="https://fonts.googleapis.com/css?family=Aldrich:regular" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <a href="pg10.html">
+        <div class="pulsing-circle"></div>
+      </a>
+  
+<script> 
+'use strict';
+
+var app = {
+
+  chars: ['The Garden of Forking Paths is a picture, incomplete yet not false, of the universe ','b','c','d','f','h','j','Your ancestor did not think of time as absolute and uniform.','f','g','h',' He believed in an infinite series of times, in a dizzily growing, ever spreading network of diverging, converging and parallel times','j','k','This web of time - the strands of which approach one another, bifurcate, intersect or ignore each other through the centuries - embraces every possibility','m','We do not exist in most of them.','o','In some you exist and not I, while in others I do, and you do not, and in yet others both of us exist.','q','r','s','"The Garden of Forking Paths is an enormous guessing game, or parable, in which the subject is time','u','v','w','The rules of the game forbid the use of the word itself. ','y','z','0',' In yet another, I say these very same words, but am an error, a phantom." ','a','b','f','s','q','c','z','b'],
+
+  init: function () {
+    app.container = document.createElement('div');
+    app.container.className = 'animation-container';
+    document.body.appendChild(app.container);
+    window.setInterval(app.add, 100);
+  },
+
+  add: function () {
+    var element = document.createElement('span');
+    app.container.appendChild(element);
+    app.animate(element);
+  },
+
+  animate: function (element) {
+    var character = app.chars[Math.floor(Math.random() * app.chars.length)];
+    var duration = Math.floor(Math.random() * 25) + 5; // Increase the range and add a base value
+    var offset = Math.floor(Math.random() * (50 - duration * 2)) + 3;
+    var size = 10 + (15 - duration);
+    element.style.cssText = 'right:'+offset+'vw; font-size:'+size+'px;animation-duration:'+duration+'s';
+    element.innerHTML = character;
+    window.setTimeout(app.remove, duration * 1000, element);
+  },
+
+  remove: function (element) {
+    element.parentNode.removeChild(element);
+  },
+
+};
+
+document.addEventListener('DOMContentLoaded', app.init);
+
+
+</script>
+
+</body>
+</html>
+

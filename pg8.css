@@ -15,14 +15,20 @@ body{
 }
 
 #weirdtext {
-    max-width: 900px; /* Adjust the max-width to your preference */
-    display: block;
+    max-width: 900px;
     margin: 50px auto 20px auto;
     text-align: center;
-    line-height: 1.5; /* Adjust the line height to your preference */
-    font-size: 1.5rem; /* Adjust the font size as needed */
+    line-height: 1.5;
+    font-size: 1.5rem;
+    color: #444;
+}
 
-    
+.next-page-link {
+    display: block;
+    margin-top: 10px; /* Adjust the margin to control the space between main text and "I got out" */
+    color: blue;
+    font-weight: bold;
+    font-size: 36px;
 }
 
 
@@ -136,3 +142,12 @@ body{
 	}
 }
 
+
+
+.next-page-link {
+    display: block;
+    margin-top: 20px; /* Adjust the margin to control the space between main text and "I got out" */
+    color: blue;
+    font-weight: bold;
+    font-size: 36px;
+}
