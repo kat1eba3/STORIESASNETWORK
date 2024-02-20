@@ -1,0 +1,93 @@
+body {
+    background-color: black;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.animated-title {
+    color: white;
+    margin: 0;
+    width: 60%;
+    text-align: center;
+    font-family: 'Chakra Petch', sans-serif;
+    animation: textGlitch 3s ease-in-out infinite alternate;
+    text-align: left;
+  }
+  
+  .animated-title span {
+    display: inline-block;
+    min-width: 1rem;
+  }
+  
+  .animated-word {
+    opacity: 0;
+    font-size: 20px; 
+  }
+  
+  .animated-word .animated-element {
+    opacity: 0;
+    transform: translateY(2px);
+    animation: displayLetter 0.5s ease-in-out 0.5s forwards alternate;
+    letter-spacing: 1px;
+  }
+  
+  @keyframes displayLetter {
+    0% {
+      transform: translateY(2px);
+      color: white;
+      opacity: 0;
+    }
+    5% {
+      opacity: 1;
+      color: rgb(205, 182, 50);
+      transform: translateY(0px);
+    }
+    20% {
+      opacity: 0;
+      color: white;
+      transform: translateY(0px);
+    }
+    50% {
+      opacity: 1;
+      color: darkgreen;
+      transform: translateY(1px);
+    }
+    70% {
+      opacity: 1;
+      color: white;
+      transform: translateY(1px);
+    }
+    100% {
+      transform: translateY(0);
+      color: white;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes textGlitch {
+    0% {
+      opacity: 1;
+    }
+    94% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+    95% {
+      opacity: 0.1;
+    }
+    96% {
+      opacity: 1;
+      transform: translateX(1px);
+    }
+    97% {
+      opacity: 0.1;
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  
