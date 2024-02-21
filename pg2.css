@@ -1,11 +1,11 @@
 #typewriter-container {
     overflow: hidden;
-    border-right: 2px solid #000; /* Add a blinking cursor effect */
+    border-right: 2px solid #0006B1; 
     padding: 10px;
     margin: 200px auto;
-    font-family: 'Chakra Petch', sans-serif; /* Correct the font name */
+    font-family: 'Chakra Petch', sans-serif; 
     word-wrap: break-word;
-    max-width: 800px; /* Set the desired maximum width for the text */
+    max-width: 800px; 
 
     
   }
@@ -13,11 +13,17 @@
   #typewriter-text {
     display: inline-block;
     font-size: 18px;
-    color: #333; /* Set your preferred text color */
+    color: black; 
   }
 
   .highlight {
-    color: red; /* Set your preferred color */
+    color: #0006B1;    
     cursor: pointer;
-    text-decoration: underline; /* Add underline effect to indicate it's clickable */
+    cursor: pointer;
+    font-weight: 700;
+}
+
+body{
+  background-color: #F9F9F7;
+  ;
 }

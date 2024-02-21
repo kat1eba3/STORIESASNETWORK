@@ -2,7 +2,7 @@ body
 {
     margin: 0;
     padding: 0;
-    background: #ffffff; 
+    background: #F9F9F7 ; 
     font-family: 'Aldrich', sans-serif;
     font-weight: bold;
 }
@@ -31,7 +31,7 @@ body
     width: 100%;
     font-size: 36px;
     text-transform: uppercase;
-    color:#000000
+    color: 	#0006b1 ;
     
 }
 
@@ -72,7 +72,7 @@ button#nextPageBtn {
     bottom: 20px;
     right: 20px;
     padding: 15px;
-    background-color: #000000;
+    background-color: 	#0006b1;
     color: #000000;
     border: none;
     border-radius: 100px;
@@ -89,7 +89,7 @@ button#nextPageBtn {
 .author h {
     margin: 0; /* Remove default margin for the h element */
     font-size: 16px; /* Set your preferred font size */
-    color: #000000; /* Set your preferred text color */
+    color: 	#0006b1; /* Set your preferred text color */
     font-family: 'Chakra Petch', sans-serif; /* Correct the font name */
 
 }
@@ -104,7 +104,7 @@ button#nextPageBtn {
 .question h {
     margin: 0; /* Remove default margin for the h element */
     font-size: 16px; /* Set your preferred font size */
-    color: #000000; /* Set your preferred text color */
+    color:	#0006b1  ; /* Set your preferred text color */
     font-family: 'Chakra Petch', sans-serif; /* Correct the font name */
 
 

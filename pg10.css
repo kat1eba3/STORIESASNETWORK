@@ -1,11 +1,11 @@
 body {
-  background-color: #000;
+  background-color: #0006B1;
   overflow-x: hidden;
 }
 
 body * {
   z-index: 20;
-  color: #000;
+  color: #0006B1;
   font-family: 'Chakra Petch', sans-serif;
   size: 18px;
 }
@@ -16,9 +16,9 @@ body * {
   height: 500px;
   background-color: #fff;
   z-index: 10;
-  -webkit-box-shadow: inset 0px 0px 150px 166px rgba(0,0,0,1);
-  -moz-box-shadow: inset 0px 0px 150px 166px rgba(0,0,0,1);
-  box-shadow: inset 0px 0px 150px 166px rgba(0,0,0,1);
+  -webkit-box-shadow: inset 0px 0px 150px 166px #0006B1;
+  -moz-box-shadow: inset 0px 0px 150px 166px #0006B1;
+  box-shadow: inset 0px 0px 150px 166px #0006B1;
 
 }
 

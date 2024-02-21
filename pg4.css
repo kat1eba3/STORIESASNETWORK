@@ -1,6 +1,6 @@
 body {
-    background-color: black;
-    color: rgb(106, 106, 106); /* Set text color to white for better visibility */
+    background-color: #0006B1 ;
+    color: white; /* Set text color to white for better visibility */
     font-family: 'Chakra Petch', sans-serif; /* Correct the font name */
 
 }
@@ -114,7 +114,7 @@ article {
 
 @keyframes colorChange {
     from {
-        color: rgb(0, 0, 0); /* Start color */
+        color: #0006B1; /* Start color */
     }
     to {
         color: rgb(255, 255, 255); /* End color */
@@ -123,7 +123,7 @@ article {
 
 @-webkit-keyframes colorChange {
     from {
-        color: rgb(0, 0, 0); /* Start color */
+        color: #0006B1; /* Start color */
     }
     to {
         color: rgb(255, 255, 255); /* End color */

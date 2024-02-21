@@ -12,6 +12,10 @@ body {
     margin: auto;
 }
 
+b {
+    color: #0006B1;
+}
+
 .glitch {
     animation: glitch-animation 2s linear infinite;
 }

@@ -23,6 +23,10 @@ p {
     font-size: 2rem;
 }
 
+b {
+    color: #0006B1; /* Change this color to your desired one using hex, rgb, or color names */
+}
+
 .section2 p {
     font-size: 2rem; /* Adjust the font size as needed */
 }
