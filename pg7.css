@@ -49,7 +49,7 @@ body, html, .main {
 
 
   .text-container {
-    left: 7%;
+    left: 5%;
     position: absolute;
     display: inline-flex;
     transform: rotate(-90deg);
@@ -60,6 +60,7 @@ body, html, .main {
   
   .error4 {
     left: 100%;
+    
   }
   
   .text {
@@ -79,39 +80,24 @@ body, html, .main {
   }
   
   
+
+
+
   @keyframes move {
     0% {
-      transform: translateX(-100%);
+        transform: translateX(calc(-100% - 40px)); /* Adjust for padding */
     }
     100% {
-      transform: translateX(100%);
+        transform: translateX(100%);
     }
-  }
-  
-  @keyframes move2 {
+}
+
+@keyframes move2 {
     0% {
-      transform: translateX(-200%);
+        transform: translateX(calc(-200% - 40px)); /* Adjust for padding */
     }
     100% {
-      transform: translateX(0);
+        transform: translateX(0);
     }
-  }
-  
-  @keyframes movedown {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-  
-  @keyframes movedown2 {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-200%);
-    }
-  }
+}
 

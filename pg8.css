@@ -22,17 +22,16 @@ body{
     color: #444;
 }
 
-b {
-    color: #0006B1; /* Change this color to your desired one using hex, rgb, or color names */
-}
+
 
 h1 a {
-    text-decoration: none; /* Remove underline from the link */
+    text-decoration: none; 
 }
 
 h1 b {
     font-weight: bold; 
-    color: #333; /* Set your preferred text color for the bold text */
+	color: #0006B1; 
+
 }
 
 h1 {
